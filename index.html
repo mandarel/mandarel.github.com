@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lumberjack</title>
+        <meta charset="UTF-8">
+        <script src="application.js"></script>
+        <link rel=stylesheet type="text/css" href="styles.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="noselect" onload="loadGame(), upgradeMenu(), updateText()">
+
+        <ul id="main">
+            <li onclick = "changeTab(1)">Building</li>
+            <li onclick="changeTab(2)">Stats</li>
+            <li onclick="changeTab(3)">Achievements</li>
+            <li onclick="changeTab(4)">Prestige</li>
+            <li onclick="changeTab(5)" id ="forest" style="visibility: hidden">Forest</li>
+            <div id="goal">Hello</div>
+            <div id="win">Not achieved</div>
+        </ul>
+
+        <div id = "tab1">
+            <div class='buildings' id="upgrades">Upgrades</div>
+            <div class='buildings' id="buildings-chop">Chopping trees</div>
+            <div class='buildings' id="buildings-grow">Growing trees</div>
+            <div class='buildings' id="buildings-sell">Selling trees</div>
+        </div>
+        <div class = "stats" id="tab2">Statistics<span id = "date"></span></div>
+        <div class = "achievements" id="tab3">Achievements</div>  
+        <div class = "prestige" id="tab4">You have <span id="prestigePoints">0</span> Great Trees. <br> To Prestige you need to finish your goal!<br><span onclick="prestige()">Prestige NOW!</span></div>
+        <div class = "forest" id="tab5">Forest Do you want to put Great Oak to sleep? <span onclick="slainGreat(1)">1</span><span onclick="slainGreat(10)">10</span><span onclick="slainGreat(100)">100</span>
+            
+            <div class='buildings' id="slaingreatoaks">Forest trees</div>
+            <div class='buildings' id="buildings-forest">Forest trees</div>
+        </div>  
+        <div class="information"  id="trees">0 tree</div>
+        <div class="information" id="trunks">0 trunks</div>
+        <div class="information" id="money">0 money</div>
+        <div class="information" id="mana">0 mana</div>
+        <div><img src="grower_tree.png" onclick="moreTrees()"></div>
+        <div onclick="saving()">SAVE</div>
+        <div onclick="loading()">LOAD</div>
+        <div onclick="removeSave()">REMOVE SAVE</div>
+        <div id="introduction" onmouseover="intro()">Welcome to Lumberjack!<br> Your goal is in the upper left corner. 
+            Complete it and prestige to spawn one of the Great Oaks.</div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-Mar-2016, 12:51:15
+    Author     : KR
+*/
+body{
+    background-color:lightgreen;
+    color:purple;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently
+                                    not supported by any browser */
+}
+#introduction{
+    display:block;
+    position:relative;
+    font-size:2em;
+    margin:20px;
+    padding:20px;
+    width:700px;
+    height:200px;
+    background:#FFCC66;
+    text-decoration:none;
+    color:#333;
+}
+
+#main{
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 30px;
+}
+li{
+    display:inline;
+    background-color:white;
+    color:black;
+    border: 2px solid black;
+    float:right;
+    margin:2px;
+    padding: 20px;
+}
+.information{
+    padding:10px;
+}
+.buildings{
+    float:right;
+    width:200px;
+
+    padding: 20px;
+}
+.upgrades{
+    padding:5px;
+    background-color:white;
+    color:black;
+}
+.buildingone{
+    padding:5px;
+    background-color:white;
+    color:black;
+    margin-bottom:20px;
+
+
+}    .tooltip {
+    position:relative;
+}
+.achievementsone{
+    background-color:white;
+    color:black;
+    margin-bottom:20px;
+    padding:10px;
+    border:none;
+    float:left;
+
+}
+.achievementsoneactive{
+    background-color:black;
+    color:white;
+    margin-bottom:20px;
+    padding:10px;
+
+}
+.achievements{
+    position:relative;
+    float:right;
+
+}
+.stats{
+    float:right;
+
+}
+.prestige{
+    float:right;
+    margin-bottom:20px;
+    padding:5px;
+}
+.forest{
+    float:right;
+    margin-bottom:20px;
+    padding:5px;
+}
+.too{
+    position: absolute;
+    background:#FFCC66;
+    text-decoration:none;
+    color:#333;
+    padding:20px;
+}
+.tooltip{
+    display:inline;
+    position:relative;
+    bottom:-10px;
+    left:10px;
+    width:200px;
+    height:50px;
+    background:#FFCC66;
+    text-decoration:none;
+    color:#333;
+}
