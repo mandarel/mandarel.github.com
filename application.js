@@ -38,7 +38,7 @@ fetch(apiBase)
     console.log(err);
   });
 
-fetch('https://crossorigin.me/http://city-weather-e-api.us-e1.cloudhub.io/api/cities', 
+fetch('http://city-weather-e-api.us-e1.cloudhub.io/api/cities', 
 {
 	method: 'POST',
 	body: JSON.stringify({
