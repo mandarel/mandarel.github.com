@@ -27,7 +27,7 @@ var treemodifier = 100;
 var slaingreatoaks= 0;
 var mana=0;
 
-var apiBase = "http://city-weather-e-api.us-e1.cloudhub.io/api/cities&callback=? ";
+var apiBase = "https://city-weather-e-api.us-e1.cloudhub.io/api/cities&callback=? ";
 
 fetch(apiBase)
   .then(function(response) {
@@ -38,7 +38,7 @@ fetch(apiBase)
     console.log(err);
   });
 
-fetch('http://city-weather-e-api.us-e1.cloudhub.io/api/cities', 
+fetch('https://city-weather-e-api.us-e1.cloudhub.io/api/cities', 
 {
 	method: 'POST',
 	body: JSON.stringify({
