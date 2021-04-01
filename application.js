@@ -27,36 +27,6 @@ var treemodifier = 100;
 var slaingreatoaks= 0;
 var mana=0;
 
-var apiBase = "https://city-weather-e-api.us-e1.cloudhub.io/api/cities&callback=? ";
-
-fetch(apiBase)
-  .then(function(response) {
-  console.log(response);
-    return response.json();
-  })
-  .catch(function(err){
-    console.log(err);
-  });
-
-fetch('https://city-weather-e-api.us-e1.cloudhub.io/api/cities', 
-{
-	method: 'POST',
-	body: JSON.stringify({
-      cities: [
-        { cityName: "Warsaw", country: "Poland" },
-        { cityName: "Gdansk", country: "Poland" }
-      ],
-      firstDay: "2021-04-01T03:34:41.098Z",
-      lastDay: "2021-04-05T03:34:41.098Z"
-    })
-}).then(function(response) {
-  console.log(response);
-    return response.json();
-  }).catch(function(err){
-  console.log(err);
-})
-
-
 function Upgrades(price, name, number, building, multiplier, active) {
     this.price = price;
     this.name = name;
